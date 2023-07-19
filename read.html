@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>라노벨 뷰어 v1.0.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/css/all.css">
+        <link rel="stylesheet" type="text/css" href="/css/read.css">
+        <style>
+            @font-face {
+                font-family: 'MainFont';
+                src: url('/font/MainFont.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'HelpFont';
+                src: url('/font/helpFont.ttf') format('truetype');
+            }
+        </style>
+        <script src="./js/pdf.js"></script>
+    </head>
+    <body>
+        <div class="absolute" style="color: aliceblue; margin: 13px; z-index: 4;">
+            <div onclick="MainPage()">메인화면</div>
+            <div style="margin-top: 10px;" onclick="ListPage()">목록화면</div>
+        </div>
+        <div class="overflow_hidden" style="z-index: 0;">
+            <div class="hscreen flex justify-center items-center relative">
+                <canvas id="pdf-canvas" class="view"></canvas>
+                <div onclick="helpPage()" class="absolute help_page" id="help_page">
+                    
+                </div>
+                <div onclick="helpPage()"  class="absolute help_text" id="help_text">
+                    <div class="flex items-center" style="color: aliceblue; height: 100%;">
+                        <div style="padding-left: 30px; margin-right: 10px;">왼쪽 클릭시 전 페이지</div>
+                        <hr style="margin-right: auto; height: 100%; margin-left: 1;"></hr>
+                        <div style="margin-right: 20px;">오른쪽 클릭시 다음 페이지</div>
+                    </div>
+                </div>
+            </div>  
+            <script src="/js/view.js"></script>
+        </div>
+        <footer>
+            <div>
+                <div class="flex justify-center">
+                    <div style="margin-top: -25px; z-index: 1;" class="page">
+                        <label id="page_number" onclick="pagego()">1</label>
+                        <label>/</label>
+                        <label id="max_page_number">1</label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

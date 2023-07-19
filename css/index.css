@@ -1,0 +1,61 @@
+.read_box {
+    width: 150px; 
+    height: 220px; 
+    color: aliceblue; 
+    display: none;
+    opacity: 0.7;
+    background-color: black;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.img_box:hover .read_box{
+    display: flex;
+}
+
+.scroll_box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.scroll_box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+
+@media (max-width: 830px) {
+    .scroll_box {
+        width: 700px;
+    }
+}
+
+@media (max-width: 720px) {
+    .scroll_box {
+        width: 600px;
+    }
+}
+
+@media (max-width: 610px) {
+    .scroll_box {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll_box {
+        width: 400px;
+    }
+}
+
+@media (max-width: 390px) {
+    .scroll_box {
+        width: 300px;
+    }
+}

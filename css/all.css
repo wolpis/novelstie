@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(23 23 23);
+    margin: 0;
+    font-family: MainFont;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.flex {
+    display: flex;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.hscreen {
+    height: 100vh;
+}
+
+.flex_col {
+    flex-direction: column;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+@media (max-width: 720px) {
+
+}

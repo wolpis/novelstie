@@ -1,0 +1,42 @@
+.view {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    
+}
+.view::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.view {
+    width: 73vh;
+    height: 100vh;
+    max-width: 100%;
+    max-height: calc(100vw * 4.5 / 3);
+}
+
+.help_page {
+    background-color: black;
+    opacity: 0.5;
+    width: 73vh;
+    height: 100vh;
+    max-width: 100%;
+    max-height: calc(100vw * 4.5 / 3);
+    font-family: HelpFont;
+    font-size: calc(1em + 1vw);
+}
+
+.help_text {
+    width: 73vh;
+    height: 100vh;
+    max-width: 100%;
+    max-height: calc(100vw * 4.5 / 3);
+    font-family: HelpFont;
+    font-size: calc(1em + 1vw); 
+}
+
+@media (max-width: 830px) {
+    .page {
+        color: aliceblue;
+    }
+}
+
